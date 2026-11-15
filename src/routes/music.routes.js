@@ -8,5 +8,6 @@ const upload = multer({
 const router = express.Router()
 
 router.post('/create-music', upload.single('music'), musicController.createMusic)
+router.post("/create-album",musicController.createAlbum)
 
 export default router
